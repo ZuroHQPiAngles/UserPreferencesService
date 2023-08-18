@@ -42,7 +42,6 @@ jobs:
 
       - name: Build Package
         run: |
-          mvn versions:use-latest-versions
           mvn package
         env:
           MAVEN_USERNAME: aws
