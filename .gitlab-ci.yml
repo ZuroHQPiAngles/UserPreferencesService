@@ -74,7 +74,6 @@ deploy:
 
     # Configure Maven with CodeArtifact
     - CURRENT_PWD=$(pwd)
-    - mvn versions:use-latest-versions $MAVEN_CLI_OPTS_DEV
     - mvn $MAVEN_CLI_OPTS_DEV package
 
     # Docker ECR authentication
